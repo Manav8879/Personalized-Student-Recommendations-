@@ -11,7 +11,7 @@ To run this project, you'll need the following Python libraries:
 - `pandas`: For handling and manipulating data.
 - `requests`: For making HTTP requests to retrieve the quiz data.
 
-  == Setup Instructions ==
+## Setup Instructions 
 
 1. Clone the Repository
    If you are working with a local repository, clone it by running the following command:
