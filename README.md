@@ -11,6 +11,45 @@ To run this project, you'll need the following Python libraries:
 - `pandas`: For handling and manipulating data.
 - `requests`: For making HTTP requests to retrieve the quiz data.
 
+  == Setup Instructions ==
+
+1. Clone the Repository
+   If you are working with a local repository, clone it by running the following command:
+
+   git clone <repository-url>
+
+2. Install Dependencies
+   After cloning the repository, make sure all necessary libraries are installed. You can install them using:
+
+   pip install pandas requests
+
+   Alternatively, if you have a requirements.txt file, you can run:
+
+   pip install -r requirements.txt
+
+3. Configure API URLs (Optional)
+   By default, the script uses the following API URLs for fetching quiz data:
+
+   - Current Quiz Data URL: https://www.jsonkeeper.com/b/LLQT
+   - Historical Quiz Data URL: https://api.jsonserve.com/XgAgFJ
+
+   If you need to use custom URLs, you can update the current_quiz_data_url and historical_quiz_data_url variables in the script.
+
+4. Run the Script
+   Once the dependencies are installed and configuration is complete, run the main Python script to analyze the data:
+
+   python quiz_data_analysis.py
+
+5. Check Output
+   After running the script, the following outputs will be available:
+   - **CSV files**: The processed data will be saved as current_quiz_data.csv and historical_quiz_data.csv in the same directory.
+   - **Console Output**: You will see an analysis of the data in your console, including weak topics and user-specific recommendations.
+
+6. Optional: Explore and Modify
+   - You can modify the thresholds for weak areas (50% accuracy) or adjust the data processing logic in the script as per your requirements.
+   - Feel free to add more analysis or features depending on the needs of your project.
+
+
   ## Project Approach
 
 The project follows a step-by-step process to load, analyze, and generate insights from quiz data. Below is a detailed breakdown of each step:
